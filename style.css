@@ -1,0 +1,86 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #e79dad;
+    font-family: Arial, sans-serif;
+}
+
+.envelope {
+    position: relative;
+    width: 400px; /* Увеличено с 300px */
+    height: 300px; /* Увеличено с 200px */
+    cursor: pointer;
+}
+
+.flap {
+    position: absolute;
+    top: 150px; /* Увеличено с 100px */
+    left: 0;
+    width: 0;
+    height: 0; 
+    border-left: 250px solid transparent; /* Увеличено с 200px */
+    border-right: 250px solid transparent; /* Увеличено с 200px */
+    border-top: 150px solid #f046e7; /* Увеличено с 100px */
+    transform-origin: top;
+    transition: transform 1.5s;
+    z-index: 1;
+}
+
+.body {
+    position: absolute;
+    top: 150px; /* Увеличено с 100px */
+    left: 0;
+    width: 500px; /* Увеличено с 400px */
+    height: 300px; /* Увеличено с 220px */
+    background-color: #ff8ee3;
+}
+
+.sheet {
+    position: absolute;
+    top: 160px; /* Увеличено с 110px */
+    left: 10px;
+    width: 480px; /* Увеличено с 380px */
+    height: 280px; /* Увеличено с 200px */
+    background-color: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transition: opacity 2.5s, top 2.5s;
+    z-index: 2;
+}
+
+.message {
+    position: absolute;
+    top: 50px; /* Увеличено с 30px */
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #333;
+    opacity: 0;
+    z-index: 3;
+}
+
+.message h1 {
+    margin: 0;
+    font-size: 32px; /* Увеличено с 24px */
+}
+
+.message p {
+    margin: 20px 0 0; /* Увеличено с 10px */
+    font-size: 20px; /* Увеличено с 16px */
+}
+
+.envelope.open .flap {
+    transform: rotateX(180deg);
+}
+
+.envelope.open .sheet {
+    opacity: 1;
+    top: -150px; /* Увеличено с -100px */
+}
+
+.envelope.open .message {
+    opacity: 1;
+}
