@@ -4,7 +4,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #e79dad;
+    background-color: #ffdee3;
     font-family: Arial, sans-serif;
 }
 
@@ -17,13 +17,13 @@ body {
 
 .flap {
     position: absolute;
-    top: 150px; /* Увеличено с 100px */
+    top: 150px; 
     left: 0;
     width: 0;
     height: 0; 
-    border-left: 250px solid transparent; /* Увеличено с 200px */
-    border-right: 250px solid transparent; /* Увеличено с 200px */
-    border-top: 150px solid #270825; /* личено с 100px */
+    border-left: 250px solid transparent; 
+    border-right: 250px solid transparent; 
+    border-top: 200px solid #c71f1f; 
     transform-origin: top;
     transition: transform 1.5s;
     z-index: 1;
@@ -31,19 +31,19 @@ body {
 
 .body {
     position: absolute;
-    top: 150px; /* Увеличено с 100px */
+    top: 150px; 
     left: 0;
-    width: 500px; /* Увеличено с 400px */
-    height: 300px; /* Увеличено с 220px */
-    background-color: #451980;
+    width: 500px;
+    height: 300px;
+    background-color: #e67070;
 }
 
 .sheet {
     position: absolute;
-    top: 160px; /* Увеличено с 110px */
+    top: 160px; 
     left: 10px;
-    width: 480px; /* Увеличено с 380px */
-    height: 280px; /* Увеличено с 200px */
+    width: 480px; 
+    height: 280px;
     background-color: white;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
     opacity: 0;
@@ -53,7 +53,7 @@ body {
 
 .message {
     position: absolute;
-    top: 50px; /* Увеличено с 30px */
+    top: 50px; 
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
@@ -64,12 +64,12 @@ body {
 
 .message h1 {
     margin: 0;
-    font-size: 32px; /* Увеличено с 24px */
+    font-size: 32px; 
 }
 
 .message p {
-    margin: 20px 0 0; /* Увеличено с 10px */
-    font-size: 20px; /* Увеличено с 16px */
+    margin: 20px 0 0; 
+    font-size: 20px; 
 }
 
 .envelope.open .flap {
@@ -84,6 +84,7 @@ body {
 .envelope.open .message {
     opacity: 1;
 }
+
 @media (max-width: 600px) {
     .envelope {
         width: 250px;
@@ -94,7 +95,7 @@ body {
         top: 100px;
         border-left: 125px solid transparent;
         border-right: 125px solid transparent;
-        border-top: 150px solid #c73434;
+        border-top: 150px solid #c71f1f;
     }
 
     .body {
