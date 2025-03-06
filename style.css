@@ -100,15 +100,93 @@ body {
 }
 
 .photo-block {
-    position: absolute; /* Фиксируем на странице */
+    position: absolute;
     width: 250px;
     height: 340px;
-    background: url('1.png') no-repeat center center;
+    background: url('gatito__pixian_ai.png') no-repeat center center;
     background-size: cover;
     top: 450px; 
-    left: 100px; /* Отступ слева */
-    z-index: 3; /* Поверх других элементов */
-    border-radius: 1%; /* Закругление углов */
+    left: 100px;
+    z-index: 3; 
+    border-radius: 1%;
 }
+
+.photo1 {
+    position: absolute; 
+    width: 350px;
+    height: 540px;
+    background: url('1.jpeg') no-repeat center center;
+    background-size: cover;
+    top: 300px; 
+    right: 100px; 
+    z-index: 3; 
+    border-radius: 10%; 
+}
+
+.photo1 {
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    background: url('me3.jpeg') no-repeat center center;
+    background-size: cover;
+    top: 350px; 
+    right: 380px; 
+    z-index: 3; 
+    border-radius: 10%;
+    transform: rotate(-10deg);
+}
+
+
+.photo3 {
+    position: absolute; 
+    width: 200px;
+    height: 300px;
+    background: url('me1.jpeg') no-repeat center center;
+    background-size: cover;
+    top: 330px; 
+    right: 200px;
+    z-index: 4;
+    border-radius: 10%; 
+   
+}
+
+.photo4 {
+    position: absolute; 
+    width: 200px;
+    height: 300px;
+    background: url('me2.jpeg') no-repeat center center;
+    background-size: cover;
+    top: 350px; 
+    right: 50px; 
+    z-index: 5; 
+    border-radius: 10%; 
+    transform: rotate(10deg);
+
+}
+
+.arrow {
+    position: absolute; 
+    width: 130px;
+    height: 140px;
+    background: url('arrow.png') no-repeat center center;
+    background-size: cover;
+    top: 200px; 
+    right: 100px; 
+    z-index: 7; 
+    border-radius: 10%; 
+    transform: rotate(10deg);
+
+}
+
+.text {
+    position: absolute;
+    top: 150px; 
+    right: 250px;
+    color: #333;
+    opacity: 1;
+    z-index: 6;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
 
 
