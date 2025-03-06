@@ -71,6 +71,7 @@ body {
     color: #333;
     opacity: 0;
     z-index: 3;
+    font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
 .message h1 {
@@ -80,7 +81,9 @@ body {
 
 .message p {
     margin: 20px 0 0; 
-    font-size: 20px; 
+    font-size: 20px;
+    
+      
 }
 
 .envelope.open .flap {
@@ -95,4 +98,17 @@ body {
 .envelope.open .message {
     opacity: 1;
 }
+
+.photo-block {
+    position: absolute; /* Фиксируем на странице */
+    width: 250px;
+    height: 340px;
+    background: url('1.png') no-repeat center center;
+    background-size: cover;
+    top: 450px; 
+    left: 100px; /* Отступ слева */
+    z-index: 3; /* Поверх других элементов */
+    border-radius: 1%; /* Закругление углов */
+}
+
 
