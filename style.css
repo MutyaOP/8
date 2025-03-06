@@ -4,6 +4,8 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
+    background: url('letcat.png') no-repeat center center fixed;
+    background-size: cover;
     background-color: #ffdee3;
     font-family: Arial, sans-serif;
 }
@@ -29,13 +31,23 @@ body {
     z-index: 1;
 }
 
+.sticker {
+    position: absolute;
+    width: 100px; /* Размер наклейки */
+    height: auto;
+    top: 120px; /* Расположение от верхнего края */
+    left: 50px; /* Расположение от левого края */
+    transform: rotate(-10deg); /* Лёгкий наклон (по желанию) */
+}
+
+
 .body {
     position: absolute;
     top: 150px; 
     left: 0;
     width: 500px;
     height: 300px;
-    background-color: #e67070;
+    background-color: #cf5353;
 }
 
 .sheet {
@@ -85,41 +97,3 @@ body {
     opacity: 1;
 }
 
-@media (max-width: 600px) {
-    .envelope {
-        width: 250px;
-        height: 200px;
-    }
-
-    .flap {
-        top: 100px;
-        border-left: 125px solid transparent;
-        border-right: 125px solid transparent;
-        border-top: 150px solid #c71f1f;
-    }
-
-    .body {
-        top: 100px;
-        width: 250px;
-        height: 200px;
-    }
-
-    .sheet {
-        top: 110px;
-        left: 5px;
-        width: 240px;
-        height: 180px;
-    }
-
-    .message h1 {
-        font-size: 24px;
-    }
-
-    .message p {
-        font-size: 16px;
-    }
-
-    .envelope.open .sheet {
-        top: -100px;
-    }
-}
