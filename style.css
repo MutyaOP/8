@@ -35,7 +35,7 @@ body {
     width: 100px; 
     height: auto;
     top: 120px; 
-    left: 50px; 
+    right: 50px; 
     transform: rotate(-10deg); 
 }
 
@@ -113,12 +113,12 @@ body {
 
 .photo5 {
     position: absolute; 
-    width: 200px;
-    height: 340px;
+    width: 270px;
+    height: 540px;
     background: url('cat1.png') no-repeat center center;
     background-size: cover;
-    top: 450px; 
-    left: 500px; 
+    top: 350px; 
+    left: 400px; 
     z-index: 3; 
     border-radius: 10%; 
 }
